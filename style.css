@@ -34,30 +34,6 @@ span {
   animation: animate 5s linear infinite;
 }
 
-@keyframes animate
-{
-  0%
-  {
-      transform: scale(0) translateY(0) rotate(0deg);
-      filter: hue-rotate(0);
-      opacity: 0;
-  }
-  30%
-  {
-      opacity: 1;
-      filter: hue-rotate(100deg) blur(5px);
-  }
-  80%
-  {
-      opacity: 1;
-  }
-  100%
-  {
-      transform: scale(1) translateY(-500%) rotate(360deg);
-      filter: hue-rotate(360deg) blur(15px);
-      opacity: 0;
-  }
-}
 
 .container{
   width: 600px;
