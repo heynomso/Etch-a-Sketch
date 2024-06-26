@@ -14,7 +14,7 @@ window.onload = () => {
 }
 
 
-function creatDivs(col , rows) {
+function createDivs(col , rows) {
     for(let i = 0;i < (col * rows); i++) {
         const div = document.createElement('div') 
         container.style.gridTemplateColumns = `repeat(${col}, 1fr)`;
@@ -22,7 +22,7 @@ function creatDivs(col , rows) {
         container.appendChild(div).classList.add('box')
     }
 }
-creatDivs(16,16)
+createDivs(16,16)
 
 function grayColor() { 
     
@@ -85,13 +85,13 @@ function reSize() {
         let user = prompt('WHAT SIZE YOU WANT YOUR GRID TO BE?')
         if(user === null || user < 1){
             reSet();
-            creatDivs(16,16);
+            createDivs(16,16);
             grayColor();
             rgbColors();
             blackColor();
         } else { 
             reSet();
-            creatDivs(user,user);
+            createDivs(user,user);
             grayColor();
             rgbColors();
             blackColor();
